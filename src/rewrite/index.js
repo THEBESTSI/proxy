@@ -2,6 +2,7 @@ import HTML from "./html.js";
 import CSS from "./css.js";
 import JS from "./js.js";
 import setCookie from "set-cookie-parser";
+const PORT = process.env.PORT || 3000;
 import { xor, base64, plain } from "./codecs.js";
 import {
 	validateCookie,
@@ -182,3 +183,8 @@ class Ultraviolet {
 
 export default Ultraviolet;
 if (typeof self === "object") self.Ultraviolet = Ultraviolet;
+const PORT = process.env.PORT || 3000;
+
+app.listen({ port: PORT, host: "0.0.0.0" }).then(() => {
+  console.log(`Server listening on port ${PORT}`);
+});
