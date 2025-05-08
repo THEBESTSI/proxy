@@ -2,7 +2,6 @@ import HTML from "./html.js";
 import CSS from "./css.js";
 import JS from "./js.js";
 import setCookie from "set-cookie-parser";
-const PORT = process.env.PORT || 3000;
 import { xor, base64, plain } from "./codecs.js";
 import {
 	validateCookie,
